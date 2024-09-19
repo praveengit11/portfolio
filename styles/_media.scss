@@ -1,0 +1,181 @@
+
+@media screen and (max-width: 426px) {
+    header{
+        padding: 0;
+        height: max-content;
+    }
+    header .right-header{
+        padding: 2rem !important;
+    }
+
+    .header-content{
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+        .left-header{
+            .h-shape{
+                display: none;
+            }
+            .image{
+                margin: 0 auto;
+                width: 80%;
+                height: 98%;
+            }
+        }
+        .right-header{
+            grid-row: 1;
+            width: 90%;
+            margin: 0 auto;
+            .name{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .section{
+        padding: 2rem 2.5rem;
+    }
+
+    .about-container{
+        padding: 0;
+        height: max-content;
+        padding-bottom: 4rem;
+        .top-about{
+            padding-top: 1.5rem;
+            margin: 0 auto;
+            .p-img{
+                flex-direction: column;
+                padding-top: 1.7rem;
+                img{
+                    height: 150px;
+                    width: 150px;
+                }
+                p{
+                    font-size: 1.1rem;
+                    text-align: justify;
+                }
+            }
+        }
+        .down-about{
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+            .abt-img{
+                img{
+                    height: 72px !important;
+                    width: 72px !important;
+                }
+            }
+            .abt-text{
+                .large-text{
+                    font-size: 1.65rem !important;
+                }
+                .small-text{
+                    font-size: 0.9rem !important;
+                }
+            }
+        }
+    }
+
+    .skills-container{
+        padding-bottom: 4rem;
+        .lang-container{
+            grid-template-columns: repeat(2,1fr);
+            img{
+                height: 100px;
+            }
+            .hover-item{
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .projects-container{
+        padding: 0;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        .project{  
+            text-align: center;
+            width: 95%;
+        }
+    }
+    .github{
+        padding-bottom: 4rem;
+    }
+
+    .contact-container{
+        padding-bottom: 2.5rem;
+        .contact-con{
+            grid-template-columns: 1fr;
+            .left-contact-con{
+                height: 350px;
+                width: 350px;
+            }
+        }
+    }
+
+    .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-primary1);
+        .control{
+            margin: 0.7rem 0.4rem;
+            height: 45px;
+            width: 45px;
+            i{
+                font-size: 1rem;
+            }
+        }
+    }
+    .btn-con{
+        align-self: center;
+    }
+    #side-heading{
+        font-size: 1.3rem;
+    }
+    .main-title{
+        // background-color: var(--color-primary2);
+        // width: 100%;
+        // padding-bottom: 2rem;
+        h2{
+            font-size: 2.6rem;
+            text-shadow: 2px 2px var(--color-primary2);
+            .bg-text{
+                display: none;
+                // font-size: 2.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .projects-container{
+        .project{
+            width: 100%;
+            img{
+                width: 290px;
+            }
+            h4{
+                font-size: 1rem;
+            }
+        }
+    }
+    .contact-container{
+        .contact-con{
+            .left-contact-con{
+                height: 300px;
+                width: 300px;
+            }
+        }
+    }
+    .main-title{
+        h2{
+            font-size: 2.4rem;
+        }
+    }
+}
