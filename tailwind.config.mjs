@@ -13,7 +13,7 @@ export default {
         darkTheme: '#080c25',
         red: '#d90429',
         redSecondary: '#a70000',
-        bgWhite: '#f0f0f0',
+        bgWhite: '#F5F7F8',
         darkBgSecondary: '#161e35',
         darkTextPrimary: '#3070e7',
         darkTextSecondary: '#a6b2ec',

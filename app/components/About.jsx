@@ -22,10 +22,10 @@ const About = ({isDarkMode}) => {
 
                 <motion.ul initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8, delay: 1}} className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                     {infoList.map(({icon, iconDark, title, description}, index) => (
-                        <motion.li initial={{scale: 0.8}} whileHover={{ y: -5 }} whileInView={{scale: 1}} className='border-[0.5px] border-redSecondary rounded-[4px_4px_8px_8px] border-b-4 border-secondary p-6 cursor-pointer duration-500 dark:border-darkTextSecondary dark:bg-transparent' key={index}>
+                        <motion.li initial={{scale: 0.8}} whileHover={{ y: -5 }} whileInView={{scale: 1}} className='border-[0.5px] border-white/50 rounded-[8px] bg-white p-6 shadow-sm cursor-pointer duration-500 dark:border-darkBgSecondary dark:bg-darkBgSecondary' key={index}>
                             <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3' />
-                            <h3 className='my-4 text-gray-800 font-semi-bold dark:text-white'>{title}</h3>
-                            <p className='text-gray-600 text-sm dark:text-white'>{description}</p>
+                            <h3 className='my-4 text-black font-semi-bold dark:text-white'>{title}</h3>
+                            <p className='text-black/80 text-sm dark:text-white/80'>{description}</p>
                         </motion.li>
                     ))}
                 </motion.ul>

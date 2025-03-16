@@ -3,8 +3,8 @@ import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
-import project_icon from './project-icon.png';
-import project_icon_dark from './project-icon-dark.png';
+import work_icon from './work-icon.png';
+import work_icon_dark from './work-icon-dark.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
@@ -67,8 +67,8 @@ export const assets = {
     code_icon_dark,
     edu_icon,
     edu_icon_dark,
-    project_icon,
-    project_icon_dark,
+    work_icon,
+    work_icon_dark,
     vscode,
     firebase,
     figma,
@@ -152,9 +152,9 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.work_icon, iconDark: assets.work_icon_dark, title: 'Work', description: 'AI-powered Chat, Voice Bots Developer' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Projects', description: 'Built ML, Node, Frontend projects' },
 ];
 
 export const toolsData = [
