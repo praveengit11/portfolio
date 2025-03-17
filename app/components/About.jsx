@@ -9,7 +9,7 @@ const About = ({isDarkMode}) => {
 
         {/* <motion.h4 initial={{y: -20, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 0.5, delay: 0.3}} className='text-center mb-2 text-lg font-Ovo'>Introduction</motion.h4> */}
 
-        <motion.h2 initial={{y: -20, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}} className='text-center text-5xl font-Ovo'>About <span className='text-red dark:text-darkTextPrimary' style={{ fontWeight: 500, fontFamily: 'font-Ovo' }}>Me</span></motion.h2>
+        <motion.h2 initial={{y: -20, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}} className='text-center text-5xl text-gray-800 font-500 dark:text-white font-Ovo'>About <span className='text-red dark:text-darkTextPrimary' style={{ fontWeight: 500, fontFamily: 'font-Ovo' }}>Me</span></motion.h2>
 
         <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}} className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
 

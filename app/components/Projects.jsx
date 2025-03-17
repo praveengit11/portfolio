@@ -7,7 +7,7 @@ const Projects = ({isDarkMode}) => {
     return (
         <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1, delay: 0.3}} id='projects' className='w-full px-[12%] py-10 scroll-mt-20'>
 
-            <motion.h2 initial={{y: -20, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}} className='my-10 text-center text-5xl font-Ovo'>My <span className='text-red dark:text-darkTextPrimary' style={{ fontWeight: 500, fontFamily: 'font-Ovo' }}>Projects</span></motion.h2>
+            <motion.h2 initial={{y: -20, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}} className='my-10 text-center text-gray-800 font-500 text-5xl font-Ovo dark:text-white'>My <span className='text-red dark:text-darkTextPrimary' style={{ fontWeight: 500, fontFamily: 'font-Ovo' }}>Projects</span></motion.h2>
 
             <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}} className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Here's a look at my projects and the tech stack I used</motion.p>
 
