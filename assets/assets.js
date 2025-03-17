@@ -60,6 +60,7 @@ import leetcode_dark_icon from './leetcode_dark.png';
 import codechef_icon from './codechef.png';
 import codechef_dark_icon from './codechef_dark.png';
 import github_btn from './github_icon.png';
+import gfg_icon from './gfg.png';
 
 export const assets = {
     user_image,
@@ -124,6 +125,7 @@ export const assets = {
     codechef_icon,
     codechef_dark_icon,
     github_btn,
+    gfg_icon
 };
 
 export const workData = [
@@ -146,7 +148,7 @@ export const workData = [
 
 export const serviceData = [
     { icon: assets.hackerrank_icon, iconDark: assets.hackerrank_icon, title: 'HackerRank', description: 'Solved _ problems', link: '' },
-    { icon: assets.hackerearth_icon, iconDark: assets.hackerearth_icon, title: 'HackerEarth', description: 'Solved _ problems', link: '' },
+    { icon: assets.gfg_icon, iconDark: assets.gfg_icon, title: 'GeeksForGeeks', description: 'Solved _ problems', link: '' },
     { icon: assets.leetcode_light_icon, iconDark: assets.leetcode_dark_icon, title: 'LeetCode', description: 'Solved _ problems', link: '' },
     { icon: assets.codechef_icon, iconDark: assets.codechef_dark_icon, title: 'CodeChef', description: 'Solved _ problems', link: '' },
 ]
