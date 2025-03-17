@@ -18,7 +18,7 @@ const About = ({isDarkMode}) => {
             </motion.div>
 
             <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.8}} className='flex-1 flex flex-col items-start gap-2 ml-10'>
-                <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}} className='mb-10 max-w-2xl font-Ovo'>I'm an Experienced full stack developer with over a 2 years of professional experience in the field.</motion.p>
+                <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}} className='mb-10 max-w-2xl font-Ovo'>I am an experienced Kore.ai Chatbot Developer with over two years of professional expertise in the field, along with hands-on experience in the MERN stack.</motion.p>
 
                 <motion.ul initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8, delay: 1}} className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                     {infoList.map(({icon, iconDark, title, description}, index) => (
