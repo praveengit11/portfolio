@@ -39,11 +39,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         </a>
         
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-bgWhiteSecondary shadow-sm dark:bg-darkBgSecondary"}`}>
-          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkBgPrimary duration-500' href="#top">Home</a></li>
-          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkBgPrimary duration-500' href="#about">About</a></li>
-          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkBgPrimary duration-500' href="#experience">Profiles</a></li>
-          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkBgPrimary duration-500' href="#projects">Projects</a></li>
-          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkBgPrimary duration-500' href="#contact">Contact Me</a></li>
+          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' href="#top">Home</a></li>
+          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' href="#about">About</a></li>
+          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' href="#experience">Profiles</a></li>
+          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' href="#projects">Projects</a></li>
+          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' href="#contact">Contact Me</a></li>
         </ul>
         <div className='flex items-center gap-4 lg:gap-6'>
           <button onClick={()=> setIsDarkMode(prev => !prev)}>
