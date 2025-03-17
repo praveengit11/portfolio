@@ -147,10 +147,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.hackerrank_icon, iconDark: assets.hackerrank_icon, title: 'HackerRank', description: 'Solved 50+ problems', link: '' },
-    { icon: assets.gfg_icon, iconDark: assets.gfg_icon, title: 'GeeksForGeeks', description: 'Solved 130+ problems', link: '' },
-    { icon: assets.leetcode_light_icon, iconDark: assets.leetcode_dark_icon, title: 'LeetCode', description: 'Solved 60+ problems', link: '' },
-    { icon: assets.codechef_icon, iconDark: assets.codechef_dark_icon, title: 'CodeChef', description: 'Solved 110+ problems', link: '' },
+    { icon: assets.hackerrank_icon, iconDark: assets.hackerrank_icon, title: 'HackerRank', description: 'Solved 50+ problems', link: 'https://www.hackerrank.com/profile/praveen8642kumar' },
+    { icon: assets.gfg_icon, iconDark: assets.gfg_icon, title: 'GeeksForGeeks', description: 'Solved 130+ problems', link: 'https://www.geeksforgeeks.org/user/praveen8642kumar/' },
+    { icon: assets.leetcode_light_icon, iconDark: assets.leetcode_dark_icon, title: 'LeetCode', description: 'Solved 60+ problems', link: 'https://leetcode.com/u/praveen_11/' },
+    { icon: assets.codechef_icon, iconDark: assets.codechef_dark_icon, title: 'CodeChef', description: 'Solved 110+ problems', link: 'https://www.codechef.com/users/praveen_1101' },
 ]
 
 export const infoList = [
@@ -160,5 +160,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.c_icon, assets.cpp_icon, assets.python_icon, assets.html_icon, assets.css_icon, assets.js_icon, assets.react_icon, assets.next_icon, assets.node_icon, assets.express_icon, assets.mongodb, assets.fastapi_icon, assets.mysql_icon, assets.sass_icon, assets.bootstrap_icon, assets.tailwind_icon, assets.git, assets.github_icon, assets.chatbot_icon
+    assets.c_icon, assets.cpp_icon, assets.python_icon, assets.html_icon, assets.css_icon, assets.js_icon, assets.react_icon, assets.next_icon, assets.node_icon, assets.express_icon, assets.fastapi_icon, assets.mongodb, assets.mysql_icon, assets.sass_icon, assets.bootstrap_icon, assets.tailwind_icon, assets.git, assets.github_icon, assets.chatbot_icon
 ];

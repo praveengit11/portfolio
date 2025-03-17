@@ -26,7 +26,7 @@ const Projects = ({isDarkMode}) => {
                 </motion.div>
             ))}
           </motion.div >
-          <motion.a transition={{duration: 1, delay: 1.2}} href="#" className='w-max flex items-center justify-center gap-2 rounded-full px-10 py-3 mx-auto my-24 duration-500 bg-red text-white dark:bg-darkTextPrimary'>Github <Image src={assets.github_btn} alt='right-arrow-icon' className='w-4'/> </motion.a>
+          <motion.a transition={{duration: 1, delay: 1.2}} href="https://github.com/praveengit11" target='_blank' className='w-max flex items-center justify-center gap-2 rounded-full px-10 py-3 mx-auto my-24 duration-500 bg-red text-white dark:bg-darkTextPrimary'>Github <Image src={assets.github_btn} alt='right-arrow-icon' className='w-4'/> </motion.a>
         </motion.div>
     )
 }
