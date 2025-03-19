@@ -68,7 +68,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
           
           <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' onClick={closeMenu} href="#top">Home</a></li>
           <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' onClick={closeMenu} href="#about">About</a></li>
-          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' onClick={closeMenu} href="#experience">Experience</a></li>
+          <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' onClick={closeMenu} href="#experience">Profiles</a></li>
           <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' onClick={closeMenu} href="#projects">Projects</a></li>
           <li><a className='font-Ovo font-semibold hover:text-red hover:dark:text-darkTextPrimary duration-500' onClick={closeMenu} href="#contact">Contact Me</a></li>
         </ul>
@@ -78,4 +78,4 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
   )
 }
 
-export default Navbar
+export default Navbar;
