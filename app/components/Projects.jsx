@@ -3,31 +3,62 @@ import { workData, assets } from '@/assets/assets'
 import Image from 'next/image'
 import { motion } from "motion/react"
 
-const Projects = ({isDarkMode}) => {
+const Projects = () => {
+    const [featured, ...rest] = workData;
+    const getTags = (description) => description.split(',').map((tag) => tag.trim());
+
     return (
-        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1, delay: 0.3}} id='projects' className='w-full px-[12%] py-10 scroll-mt-20'>
+        <motion.section initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1, delay: 0.3}} id='projects' className='section'>
+            <motion.h2 initial={{y: -20, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}} className='section-heading'>My <span className='text-red dark:text-darkTextPrimary' style={{ fontWeight: 500, fontFamily: 'font-Ovo' }}>Projects</span></motion.h2>
+            <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}} className='section-subtitle'>Here's a look at my projects and the tech stack I used.</motion.p>
 
-            <motion.h2 initial={{y: -20, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration: 0.5, delay: 0.5}} className='my-10 text-center text-gray-800 font-500 text-5xl font-Ovo dark:text-white'>My <span className='text-red dark:text-darkTextPrimary' style={{ fontWeight: 500, fontFamily: 'font-Ovo' }}>Projects</span></motion.h2>
-
-            <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}} className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Here's a look at my projects and the tech stack I used</motion.p>
-
-            <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.9, delay: 0.6}} className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
-            {workData.map((project, index)=>(
-                <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8, delay: 0.9}} key={index} className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' style={{backgroundImage: `url(${project.bgImage})`}}>
-                    <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
-                        <div>
-                            <h2 className='font-semibold'>{project.title}</h2>
-                            <p className='text-sm text-gray-700'>{project.description}</p>
-                        </div>
-                        <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                            <Image src={assets.send_icon} alt='send-icon' className='w-5' />
+            <div className='mt-12 grid lg:grid-cols-[1.2fr_0.8fr] gap-6'>
+                <motion.div initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.6}} className='relative overflow-hidden rounded-3xl card-base'>
+                    <div className='absolute inset-0 bg-cover bg-center' style={{backgroundImage: `url(${featured.bgImage})`}} />
+                    <div className='absolute inset-0 bg-gradient-to-br from-black/10 via-black/10 to-black/50 dark:from-black/20 dark:to-black/70' />
+                    <div className='relative p-8 min-h-[320px] flex flex-col justify-end text-white'>
+                        <p className='text-sm uppercase tracking-[0.2em] text-white/70'>Featured</p>
+                        <h3 className='mt-3 text-3xl font-semibold'>{featured.title}</h3>
+                        {/* <p className='mt-2 text-white/80'>{featured.description}</p> */}
+                        <div className='mt-4 flex flex-wrap gap-2'>
+                            {getTags(featured.description).map((tag) => (
+                                <span className='chip text-white/90 border-white/20 bg-white/10' key={tag}>{tag}</span>
+                            ))}
                         </div>
                     </div>
                 </motion.div>
-            ))}
-          </motion.div >
-          <motion.a transition={{duration: 1, delay: 1.2}} href="https://github.com/praveengit11" target='_blank' className='w-max flex items-center justify-center gap-2 rounded-full px-10 py-3 mx-auto my-24 duration-500 bg-red text-white dark:bg-darkTextPrimary'>Github <Image src={assets.github_btn} alt='right-arrow-icon' className='w-4'/> </motion.a>
-        </motion.div>
+
+                <div className='grid gap-6'>
+                    {rest.map((project, index) => (
+                        <motion.div initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.1 * index}} key={project.title} className='card-base card-hover overflow-hidden group'>
+                            <div className='relative h-40 bg-cover bg-center' style={{backgroundImage: `url(${project.bgImage})`}} />
+                            <div className='p-5'>
+                                <div className='flex items-center justify-between gap-4'>
+                                    <div>
+                                        <h4 className='text-lg font-semibold text-gray-800 dark:text-white'>{project.title}</h4>
+                                        {/* <p className='text-sm text-gray-600 dark:text-white/70'>{project.description}</p> */}
+                                    </div>
+                                    <span className='inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 dark:border-white/10 group-hover:bg-red/10 dark:group-hover:bg-darkTextPrimary/20 transition'>
+                                        <Image src={assets.send_icon} alt='send-icon' className='w-5' />
+                                    </span>
+                                </div>
+                                <div className='mt-3 flex flex-wrap gap-2'>
+                                    {getTags(project.description).map((tag) => (
+                                        <span className='chip' key={`${project.title}-${tag}`}>{tag}</span>
+                                    ))}
+                                </div>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+
+            <div className='mt-16 flex justify-center'>
+                <motion.a initial={{opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.8, delay: 0.7}} href="https://github.com/praveengit11" target='_blank' className='btn-primary w-max'>
+                    Github <Image src={assets.github_btn} alt='github icon' className='w-4' />
+                </motion.a>
+            </div>
+        </motion.section>
     )
 }
 

@@ -6,6 +6,40 @@
   font-family: Outfit;
 }
 
+@layer components {
+  .section {
+    @apply w-full px-[8%] sm:px-[10%] py-16 md:py-20 scroll-mt-24;
+  }
+
+  .section-heading {
+    @apply text-center text-4xl md:text-5xl font-Ovo text-gray-800 dark:text-white;
+  }
+
+  .section-subtitle {
+    @apply text-center max-w-2xl mx-auto mt-4 text-gray-600 dark:text-white/80;
+  }
+
+  .card-base {
+    @apply rounded-2xl bg-bgWhiteSecondary/90 dark:bg-darkBgSecondary/80 border border-black/5 dark:border-white/5 shadow-sm;
+  }
+
+  .card-hover {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm bg-white/80 dark:bg-darkBgSecondary/70 border border-white/60 dark:border-white/10;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full px-8 py-3 bg-red text-white dark:bg-darkTextPrimary transition-transform duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-full px-8 py-3 text-gray-800 dark:text-white/90;
+  }
+}
+
 :root {
   --btn-light: #d90429; /* Light mode color */
 }

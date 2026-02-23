@@ -1,4 +1,4 @@
-import user_image from './user-image.jpeg';
+import user_image from './praveen.jpeg';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -61,6 +61,7 @@ import codechef_icon from './codechef.png';
 import codechef_dark_icon from './codechef_dark.png';
 import github_btn from './github_icon.png';
 import gfg_icon from './gfg.png';
+import linkedin_icon from './linkedin.svg';
 
 export const assets = {
     user_image,
@@ -125,7 +126,8 @@ export const assets = {
     codechef_icon,
     codechef_dark_icon,
     github_btn,
-    gfg_icon
+    gfg_icon,
+    linkedin_icon
 };
 
 export const workData = [
@@ -148,14 +150,14 @@ export const workData = [
 
 export const serviceData = [
     { icon: assets.hackerrank_icon, iconDark: assets.hackerrank_icon, title: 'HackerRank', description: 'Solved 50+ problems', link: 'https://www.hackerrank.com/profile/praveen8642kumar' },
-    { icon: assets.gfg_icon, iconDark: assets.gfg_icon, title: 'GeeksForGeeks', description: 'Solved 130+ problems', link: 'https://www.geeksforgeeks.org/user/praveen8642kumar/' },
-    { icon: assets.leetcode_light_icon, iconDark: assets.leetcode_dark_icon, title: 'LeetCode', description: 'Solved 60+ problems', link: 'https://leetcode.com/u/praveen_11/' },
+    { icon: assets.gfg_icon, iconDark: assets.gfg_icon, title: 'GeeksForGeeks', description: 'Solved 140+ problems', link: 'https://www.geeksforgeeks.org/user/praveen8642kumar/' },
+    { icon: assets.leetcode_light_icon, iconDark: assets.leetcode_dark_icon, title: 'LeetCode', description: 'Solved 90+ problems', link: 'https://leetcode.com/u/praveen_11/' },
     { icon: assets.codechef_icon, iconDark: assets.codechef_dark_icon, title: 'CodeChef', description: 'Solved 110+ problems', link: 'https://www.codechef.com/users/praveen_1101' },
 ]
 
 export const infoList = [
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
     { icon: assets.work_icon, iconDark: assets.work_icon_dark, title: 'Work', description: 'AI-powered Chat, Voice Bots Developer' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Projects', description: 'Built ML, Node, Frontend projects' },
 ];
 

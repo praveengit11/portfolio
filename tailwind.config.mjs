@@ -14,7 +14,7 @@ export default {
         red: '#d90429',
         redSecondary: '#a70000',
         bgWhite: '#ffffff',
-        bgWhiteSecondary: '#F5F7F8',
+        bgWhiteSecondary: '#edf4f8',
         darkBgSecondary: '#161e35',
         darkTextPrimary: '#3070e7',
         darkTextSecondary: '#a6b2ec',
@@ -30,6 +30,14 @@ export default {
       },
       gridTemplateColumns: {
         'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
+      },
+      spacing: {
+        'section': '5.5rem',
+        'section-lg': '7rem'
+      },
+      borderRadius: {
+        'xl2': '1.25rem',
+        'xl3': '1.75rem'
       }
     },
   },
